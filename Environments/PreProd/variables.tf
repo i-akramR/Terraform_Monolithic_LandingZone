@@ -1,0 +1,9 @@
+variable "RGS" {}
+variable "vnets" {}
+variable "subnets" {}
+variable "dev_vms" {}
+variable "bastion_hosts" {}
+variable "nat_gateways" {}
+variable "storage_accounts" {}
+variable "app_gateways" {}
+variable "load_balancers" {}
