@@ -50,7 +50,7 @@ GitHub Actions
              ▼
            Azure
 
-🏗️ Architecture
+##  🏗️ Architecture
 
 The infrastructure is designed around Azure Landing Zone concepts, providing a structured foundation for Azure workloads.
 
