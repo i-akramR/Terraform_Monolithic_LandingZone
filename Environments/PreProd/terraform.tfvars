@@ -26,21 +26,25 @@ subnets = {
     name                 = "frontend-subnet"
     resource_group_name  = "RG-Dev"
     virtual_network_name = "Dev-vnet"
+    address_prefixes     = ["10.128.1.0/24"]
   }
   snet2 = {
     name                 = "backend-subnet"
     resource_group_name  = "RG-Dev"
     virtual_network_name = "Dev-vnet"
+    address_prefixes     = ["10.128.2.0/24"]
   }
   snet3 = {
     name                 = "AzureBastionSubnet"
     resource_group_name  = "RG-Dev"
     virtual_network_name = "Dev-vnet"
+    address_prefixes     = ["10.128.3.0/24"]
   }
   snet4 = {
     name                 = "AppGwSubnet"
     resource_group_name  = "RG-Dev"
     virtual_network_name = "Dev-vnet"
+    address_prefixes     = ["10.128.4.0/24"]
   }
 }
 
