@@ -49,3 +49,55 @@ GitHub Actions
              │
              ▼
            Azure
+
+🏗️ Architecture
+
+The infrastructure is designed around Azure Landing Zone concepts, providing a structured foundation for Azure workloads.
+
+High-Level Architecture
+
+                         Azure Cloud
+                              │
+                    ┌─────────┴─────────┐
+                    │   Azure Landing   │
+                    │       Zone        │
+                    └─────────┬─────────┘
+                              │
+                       ┌──────┴──────┐
+                       │  Networking │
+                       └──────┬──────┘
+                              │
+                       ┌──────┴──────┐
+                       │   Dev VNet  │
+                       │  10.x.x.x   │
+                       └──────┬──────┘
+                              │
+          ┌───────────────────┼───────────────────┐
+          │                   │                   │
+          ▼                   ▼                   ▼
+   Frontend Subnet      Backend Subnet    Azure Bastion
+          │                   │                   │
+          ▼                   ▼                   ▼
+     Application          Backend            Secure
+      Workloads          Workloads           Access
+
+
+🧩 Infrastructure Components
+
+This project provisions Azure infrastructure using reusable Terraform modules.
+
+Networking
+🌐 Azure Virtual Network
+🔹 Azure Subnets
+🔐 Azure Bastion
+⚖️ Azure Load Balancer
+🚪 Azure NAT Gateway
+🌍 Application Gateway
+Compute
+💻 Azure Virtual Machines
+Storage
+📦 Azure Storage Account
+Resource Management
+📁 Azure Resource Groups
+
+The modular design makes it easier to add or remove infrastructure components without duplicating Terraform code.
