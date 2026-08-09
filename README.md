@@ -56,6 +56,7 @@ GitHub Actions
 The infrastructure is designed around Azure Landing Zone concepts, providing a structured foundation for Azure workloads.
 
 High-Level Architecture
+```text
                          Azure Cloud
                               │
                     ┌─────────┴─────────┐
@@ -80,7 +81,7 @@ High-Level Architecture
           ▼                   ▼                   ▼
      Application          Backend            Secure
       Workloads          Workloads           Access
-           
+```           
 
 
 ## 🧩 Infrastructure Components
