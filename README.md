@@ -50,6 +50,7 @@ GitHub Actions
              ▼
            Azure
 
+```
 ##  🏗️ Architecture
 
 The infrastructure is designed around Azure Landing Zone concepts, providing a structured foundation for Azure workloads.
@@ -82,7 +83,7 @@ High-Level Architecture
       Workloads          Workloads           Access
 
 
-🧩 Infrastructure Components
+## 🧩 Infrastructure Components
 
 This project provisions Azure infrastructure using reusable Terraform modules.
 
